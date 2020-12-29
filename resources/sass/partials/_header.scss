@@ -1,29 +1,286 @@
 header {
-    font-size: $fontSize * 1.2;
-    font-weight: bold;
 
-    // TOP: brand logo
-    #logo {
-        text-align: center;
-        padding: (2 * $spacing) 0;
+    // top: logo and user access
+    #header-logo {
+        .container {
+            .row {
+                justify-content: space-between;
+                flex-wrap: nowrap;
 
-        img {
-            max-height: 100px;
-        }
-    }
+                // sx: brand-logo
+                .logo {
+                    height: $headerTopH;
+                    max-width: 250px;
+                    @include flex(row, center, center);
 
-    // BTM: nav menu
-    #main-menu {
-        text-align: center;
-        padding: ($spacing) 0;
+                    img {
+                        width: 100%;
+                    }
+                } // end .logo
 
-        a {
-            padding: $spacing;
-            color: $titlePr;
-            &.active, &:hover {
-                background-color: #B3E5FC;
-            }
-        }
-    }
+                // dx: user-access
+                .user-access {
+                    height: $headerTopH;
+                    flex-shrink: 0;
+                    @include flex(row, center, center);
+                } // end .user-access
+            } // end row
+        } // end container
+    } // end #header-logo
 
-} // fine header
+    // hidden-btm: nav-menu
+    #nav-menu {
+        border-top: 1px solid #e5e5e5;
+        border-bottom: 1px solid #e5e5e5;
+        .container {
+            .row {
+                justify-content: space-between;
+
+                // top-sx: menu
+                .main-menu {
+                    width: 100%;
+                    background-color: green;
+
+                    ul {
+                        width: 100%;
+                        @include clearfix;
+                        li {
+                            display: block;
+                            float: left;
+                            width: 100%;
+                            a {
+                                display: inline-block;
+                                padding: $spacing $spacing / 3 * 4;
+                            }
+                        }
+                    }
+                } // end sx menu
+
+                // btm-dx: search
+                .search {
+                    background-color: orange;
+                } // end dx search
+            } // row
+        } // end container
+    } // end nav-menu
+} // end header
+
+// MEDIA QUERY
+// - xs -
+@media screen and (min-width: $sm-min) {
+    header {
+        background-color: green;
+
+        // top: logo and user access
+        #header-logo {
+            .container {
+                .row {
+
+                    // sx: brand-logo
+                    .logo {
+
+
+                        img {
+
+                        }
+                    } // end .logo
+
+                    // dx: user-access
+                    .user-access {
+
+                    } // end .user-access
+                } // end row
+            } // end container
+        } // end #header-logo
+
+        // hidden-btm: nav-menu
+        #nav-menu {
+
+            .container {
+                .row {
+
+                    // top-sx: menu
+                    .main-menu {
+
+                        ul {
+                            li {
+                                width: 50%;
+                                a {
+
+                                }
+                            }
+                        }
+                    } // end sx menu
+
+                    // btm-dx: search
+                    .search {
+
+                    } // end dx search
+                } // row
+            } // end container
+        } // end nav-menu
+    } // end header
+}
+// - sm -
+@media screen and (min-width: $md-min) {
+    header {
+
+        // top: logo and user access
+        #header-logo {
+            .container {
+                .row {
+
+                    // sx: brand-logo
+                    .logo {
+
+
+                        img {
+
+                        }
+                    } // end .logo
+
+                    // dx: user-access
+                    .user-access {
+
+                    } // end .user-access
+                } // end row
+            } // end container
+        } // end #header-logo
+
+        // hidden-btm: nav-menu
+        #nav-menu {
+
+            .container {
+                .row {
+
+                    // top-sx: menu
+                    .main-menu {
+
+                        ul {
+                            li {
+                                width: 25%;
+                                a {
+
+                                }
+                            }
+                        }
+                    } // end sx menu
+
+                    // btm-dx: search
+                    .search {
+
+                    } // end dx search
+                } // row
+            } // end container
+        } // end nav-menu
+    } // end header
+}
+// - md -
+@media screen and (min-width: $lg-min) {
+    header {
+
+        // top: logo and user access
+        #header-logo {
+            .container {
+                .row {
+
+                    // sx: brand-logo
+                    .logo {
+
+
+                        img {
+
+                        }
+                    } // end .logo
+
+                    // dx: user-access
+                    .user-access {
+
+                    } // end .user-access
+                } // end row
+            } // end container
+        } // end #header-logo
+
+        // hidden-btm: nav-menu
+        #nav-menu {
+
+            .container {
+                .row {
+
+                    // top-sx: menu
+                    .main-menu {
+
+                        ul {
+                            li {
+
+                                a {
+
+                                }
+                            }
+                        }
+                    } // end sx menu
+
+                    // btm-dx: search
+                    .search {
+
+                    } // end dx search
+                } // row
+            } // end container
+        } // end nav-menu
+    } // end header
+}
+// - lg -
+@media screen and (min-width: $xl-min) {
+    header {
+
+        // top: logo and user access
+        #header-logo {
+            .container {
+                .row {
+
+                    // sx: brand-logo
+                    .logo {
+
+
+                        img {
+
+                        }
+                    } // end .logo
+
+                    // dx: user-access
+                    .user-access {
+
+                    } // end .user-access
+                } // end row
+            } // end container
+        } // end #header-logo
+
+        // hidden-btm: nav-menu
+        #nav-menu {
+
+            .container {
+                .row {
+
+                    // top-sx: menu
+                    .main-menu {
+
+                        ul {
+                            li {
+                                width: 50%;
+                                a {
+
+                                }
+                            }
+                        }
+                    } // end sx menu
+
+                    // btm-dx: search
+                    .search {
+
+                    } // end dx search
+                } // row
+            } // end container
+        } // end nav-menu
+    } // end header
+}
+// - xl -
