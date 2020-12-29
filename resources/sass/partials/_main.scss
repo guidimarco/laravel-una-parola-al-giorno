@@ -1,0 +1,122 @@
+main {
+    $arrow-dim: 130px;
+
+    & > div {
+        min-height: 100vh;
+        padding: ($spacing * 2) 0;
+        &#brand-main {
+            background-image: url("/images/sfondo-main.jpg");
+
+            // html --> Prodotti
+            .card-container {
+                .card {
+                    position: relative;
+                    margin: $gutter;
+                    cursor: pointer;
+
+                    .img-container {
+                        width: 100%;
+                        img {
+                            display: block;
+                            max-width: 100%;
+                        }
+                    }
+
+                    .card-overlay {
+                        opacity: 0;
+                        @include posAbs(0, 0, 0, 0);
+                        @include flex(row, center, center);
+                        transition: opacity 2s;
+                    }
+
+                    &:hover {
+                        .card-overlay {
+                            background-color: #fff;
+                            opacity: 0.8;
+                        }
+                    }
+                }
+            }
+
+        } // end brand main
+        &#scheda-prodotto {
+            position: relative;
+            // background-image: url("/images/sfondo-main.jpg");
+            background-color: $schedaProdotto;
+            color: $titlePr;
+            h1 {
+                text-align: center;
+            }
+
+            .arrow {
+                display: block;
+                position: fixed;
+                top: 50%; transform: translate(-$arrow-dim, calc(-#{$arrow-dim} / 2));
+                background-color: $btnPr; color: $btnPrText;
+
+                &.arrow-left:hover {
+                    animation: arrow-left-animation 1s ease 0s 1 normal forwards;
+                }
+                @keyframes arrow-left-animation {
+                    0% {transform: translate(-$arrow-dim, calc(-#{$arrow-dim} / 2));}
+                    100% {transform: translate(0, calc(-#{$arrow-dim} / 2));}
+                }
+                &.arrow-right {
+                    right: 0;
+                    transform: translate($arrow-dim, calc(-#{$arrow-dim} / 2));
+                }
+                &.arrow-right:hover {
+                    animation: arrow-right-animation 1s ease 0s 1 normal forwards;
+                }
+                @keyframes arrow-right-animation {
+                    0% {transform: translate($arrow-dim, calc(-#{$arrow-dim} / 2));}
+                    100% {transform: translate(0, calc(-#{$arrow-dim} / 2));}
+                }
+
+                &:hover .top .arrow-symb {
+                    animation: arrow-symb-animation 1s ease 0s 1 normal forwards;
+                }
+                @keyframes arrow-symb-animation {
+                    0% {width: calc(#{$arrow-dim} / 2);}
+                    100% {width: $arrow-dim; background-color: $btnHover;}
+                }
+                &:hover .next-title {
+                    display: block;
+                }
+
+                .top {
+                    @include clearfix;
+                    // external img
+                    .img-container {
+                        float: left;
+                        img {
+                            display: block;
+                            max-width: unset;
+                            width: $arrow-dim; height: $arrow-dim;
+                            object-fit: cover; object-position: center;
+                        }
+                    }
+                    // int arrow
+                    .arrow-symb {
+                        float: left;
+                        width: calc(#{$arrow-dim} / 2); height: $arrow-dim;
+                        @include flex(row, center, center);
+                    }
+                }
+
+                .next-title {
+                    display: none;
+                    padding: $spacing;
+                    background-color: $btnSec; color: $btnHover;
+                    text-align: right;
+                    white-space: normal;
+                }
+                &.arrow-right {
+                    .next-title {
+                        text-align: left;
+                    }
+                }
+            } // end arrow
+        } // end scheda prodotto
+    }
+} // end main
