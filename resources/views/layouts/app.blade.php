@@ -16,5 +16,8 @@
         welcome
 
         @include('partials.footer')
+
+        <!-- js -->
+        <script src="/js/app.js" charset="utf-8"></script>
     </body>
 </html>
