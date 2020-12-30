@@ -4,6 +4,10 @@ header {
 
     // top: logo and user access
     #header-logo {
+        background-color: #fff;
+        position: fixed;
+        top: 0; left: 0; right: 0;
+
         .container {
             .row {
                 justify-content: space-between;
@@ -31,6 +35,7 @@ header {
                         border: 1px solid black;
                         border-radius: $spacing / 2;
                         min-height: 40px;
+                        cursor: pointer;
                         i {
                             font-size: 24px;
                         }
@@ -51,8 +56,11 @@ header {
 
     // hidden-btm: nav-menu
     #nav-menu {
+        background-color: hsla(0,0%,100%,.97);
         border-top: 1px solid #e5e5e5;
         border-bottom: 1px solid #e5e5e5;
+        position: fixed;
+        top: $headerTopH; left: 0; right: 0;
 
         .container {
             .row {
@@ -69,23 +77,41 @@ header {
                         font-size: $fontSize * 0.9;
                         text-transform: uppercase;
                         padding: $spacing / 4 0;
+                        &.visible {
+                            display: block;
+                        }
 
                         li {
                             display: block;
                             float: left;
                             width: 100%;
-                            border: 1px solid transparent;
+                            padding: $spacing / 4 0;
+
+                            &:not(:last-child) {
+                                border-bottom: 1px solid #e5e5e5;
+                            }
 
                             &.btn-special {
                                 border-color: $btnSpCol;
                             }
-
-                            &:hover {
-                                background-color: #f9f9f9;
+                            &.search-btn {
+                                width: 100%;
+                                cursor: pointer;
+                                background: $btnSearch;
+                                margin: $spacing / 3 * 4 0;
+                                border: 1px solid $btnSearchCol;
+                                &:hover {
+                                    background-color: hsla(0,0%,100%,.97);
+                                }
                             }
+
                             a {
                                 display: inline-block;
+                                border: 1px solid transparent;
                                 padding: $spacing $spacing / 6 * 4;
+                                &.btn-special {
+                                    border: 1px solid $btnSpCol;
+                                }
                             }
                         }
                     }
@@ -210,6 +236,8 @@ header {
 
         // top: logo and user access
         #header-logo {
+            position: relative;
+            top: unset; left: unset; right: unset;
             .container {
                 .row {
 
@@ -238,7 +266,8 @@ header {
 
         // hidden-btm: nav-menu
         #nav-menu {
-
+            position: relative;
+            top: unset; left: unset; right: unset;
             .container {
                 .row {
 
@@ -249,9 +278,23 @@ header {
                             display: table;
                             li {
                                 width: unset;
+                                &:not(:last-child) {
+                                    border-bottom: 0px solid transparent;
+                                }
                                 &.search-btn {
                                     float: right;
+                                    width: unset;
+                                    background: unset;
+                                    margin: unset;
+                                    border-style: none;
+                                    &:hover {
+                                        background-color: unset;
+                                    }
                                 }
+                                &:hover {
+                                    background-color: #f9f9f9;
+                                }
+
                                 a {
 
                                 }

@@ -14,7 +14,7 @@
         <div id="root">
             @include('partials.header')
 
-            welcome
+            @yield('main')
 
             @include('partials.footer')
         </div>

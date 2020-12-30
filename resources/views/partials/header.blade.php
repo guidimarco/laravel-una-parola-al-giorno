@@ -10,7 +10,8 @@
 
                 <!-- dx: user access -->
                 <div class="user-access">
-                    <div class="trigger-menu">
+                    <div class="trigger-menu"
+                        @click="showMenu = !showMenu">
                         <i class="fas fa-bars"></i>
                     </div>
 
@@ -32,7 +33,7 @@
             <div class="row">
                 <!-- sx: menu -->
                 <div class="main-menu">
-                    <ul>
+                    <ul :class="showMenu ? 'visible' : ''">
                         <li>
                             <a href="#">
                                 progetto
@@ -73,8 +74,8 @@
                                 collabora
                             </a>
                         </li>
-                        <li class="btn-special">
-                            <a href="#">
+                        <li>
+                            <a href="#" class="btn-special">
                                 premium
                             </a>
                         </li>

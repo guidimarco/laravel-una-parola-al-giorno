@@ -6660,6 +6660,13 @@ header {
   font-size: 14px;
   color: rgba(0, 0, 0, 0.7);
 }
+header #header-logo {
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
 header #header-logo .container .row {
   justify-content: space-between;
   flex-wrap: nowrap;
@@ -6688,6 +6695,7 @@ header #header-logo .container .row .user-access .trigger-menu {
   border: 1px solid black;
   border-radius: 6px;
   min-height: 40px;
+  cursor: pointer;
 }
 header #header-logo .container .row .user-access .trigger-menu i {
   font-size: 24px;
@@ -6704,8 +6712,13 @@ header #header-logo .container .row .user-access .btn {
   align-items: center;
 }
 header #nav-menu {
+  background-color: rgba(255, 255, 255, 0.97);
   border-top: 1px solid #e5e5e5;
   border-bottom: 1px solid #e5e5e5;
+  position: fixed;
+  top: 62px;
+  left: 0;
+  right: 0;
 }
 header #nav-menu .container .row {
   justify-content: space-between;
@@ -6723,21 +6736,38 @@ header #nav-menu .container .row .main-menu ul {
   text-transform: uppercase;
   padding: 3px 0;
 }
+header #nav-menu .container .row .main-menu ul.visible {
+  display: block;
+}
 header #nav-menu .container .row .main-menu ul li {
   display: block;
   float: left;
   width: 100%;
-  border: 1px solid transparent;
+  padding: 3px 0;
+}
+header #nav-menu .container .row .main-menu ul li:not(:last-child) {
+  border-bottom: 1px solid #e5e5e5;
 }
 header #nav-menu .container .row .main-menu ul li.btn-special {
   border-color: #459993;
 }
-header #nav-menu .container .row .main-menu ul li:hover {
-  background-color: #f9f9f9;
+header #nav-menu .container .row .main-menu ul li.search-btn {
+  width: 100%;
+  cursor: pointer;
+  background: #e1ecf1;
+  margin: 16px 0;
+  border: 1px solid #b6d9e8;
+}
+header #nav-menu .container .row .main-menu ul li.search-btn:hover {
+  background-color: rgba(255, 255, 255, 0.97);
 }
 header #nav-menu .container .row .main-menu ul li a {
   display: inline-block;
+  border: 1px solid transparent;
   padding: 12px 8px;
+}
+header #nav-menu .container .row .main-menu ul li a.btn-special {
+  border: 1px solid #459993;
 }
 
 @media screen and (min-width: 576px) {
@@ -6751,11 +6781,23 @@ header #nav-menu .container .row .main-menu ul li a {
   }
 }
 @media screen and (min-width: 992px) {
+  header #header-logo {
+    position: relative;
+    top: unset;
+    left: unset;
+    right: unset;
+  }
   header #header-logo .container .row .user-access .trigger-menu {
     display: none;
   }
   header #header-logo .container .row .user-access .user-log-in {
     display: block;
+  }
+  header #nav-menu {
+    position: relative;
+    top: unset;
+    left: unset;
+    right: unset;
   }
   header #nav-menu .container .row .main-menu ul {
     display: table;
@@ -6763,7 +6805,24 @@ header #nav-menu .container .row .main-menu ul li a {
   header #nav-menu .container .row .main-menu ul li {
     width: unset;
   }
+  header #nav-menu .container .row .main-menu ul li:not(:last-child) {
+    border-bottom: 0px solid transparent;
+  }
   header #nav-menu .container .row .main-menu ul li.search-btn {
     float: right;
+    width: unset;
+    background: unset;
+    margin: unset;
+    border-style: none;
   }
+  header #nav-menu .container .row .main-menu ul li.search-btn:hover {
+    background-color: unset;
+  }
+  header #nav-menu .container .row .main-menu ul li:hover {
+    background-color: #f9f9f9;
+  }
+}
+main {
+  padding-top: 62px;
+  background-color: red;
 }

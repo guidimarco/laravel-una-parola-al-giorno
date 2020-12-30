@@ -31598,7 +31598,9 @@ __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 var app = new vue__WEBPACK_IMPORTED_MODULE_0___default.a({
   el: "#root",
-  data: {},
+  data: {
+    showMenu: false
+  },
   methods: {},
   mounted: function mounted() {}
 });
