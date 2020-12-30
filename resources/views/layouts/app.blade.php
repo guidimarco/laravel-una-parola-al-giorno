@@ -11,11 +11,13 @@
         <link rel="stylesheet" href="/css/app.css">
     </head>
     <body>
-        @include('partials.header')
+        <div id="root">
+            @include('partials.header')
 
-        welcome
+            welcome
 
-        @include('partials.footer')
+            @include('partials.footer')
+        </div>
 
         <!-- js -->
         <script src="/js/app.js" charset="utf-8"></script>
