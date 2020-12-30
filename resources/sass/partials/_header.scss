@@ -23,6 +23,25 @@ header {
                     height: $headerTopH;
                     flex-shrink: 0;
                     @include flex(row, center, center);
+
+                    .trigger-menu {
+                        padding: $spacing / 2 $spacing;
+                        border: 1px solid black;
+                        border-radius: $spacing / 2;
+                        min-height: 40px;
+                        i {
+                            font-size: 24px;
+                        }
+                    }
+                    .user-log-in {
+                        display: none;
+                    }
+
+                    .btn {
+                        margin-left: $spacing;
+                        min-height: 40px;
+                        @include flex(row, center, center);
+                    }
                 } // end .user-access
             } // end row
         } // end container
@@ -42,12 +61,16 @@ header {
                     background-color: green;
 
                     ul {
+                        display: none;
                         width: 100%;
-                        @include clearfix;
+                        // @include clearfix;
                         li {
                             display: block;
                             float: left;
                             width: 100%;
+                            &.search {
+
+                            }
                             a {
                                 display: inline-block;
                                 padding: $spacing $spacing / 3 * 4;
@@ -55,11 +78,6 @@ header {
                         }
                     }
                 } // end sx menu
-
-                // btm-dx: search
-                .search {
-                    background-color: orange;
-                } // end dx search
             } // row
         } // end container
     } // end nav-menu
@@ -69,7 +87,6 @@ header {
 // - xs -
 @media screen and (min-width: $sm-min) {
     header {
-        background-color: green;
 
         // top: logo and user access
         #header-logo {
@@ -195,7 +212,13 @@ header {
 
                     // dx: user-access
                     .user-access {
+                        .trigger-menu {
+                            display: none;
+                        }
 
+                        .user-log-in {
+                            display: block;
+                        }
                     } // end .user-access
                 } // end row
             } // end container
@@ -211,8 +234,13 @@ header {
                     .main-menu {
 
                         ul {
+                            display: block;
+                            width: unset;
                             li {
-
+                                width: unset;
+                                &.search-btn {
+                                    float: right;
+                                }
                                 a {
 
                                 }
@@ -266,7 +294,7 @@ header {
 
                         ul {
                             li {
-                                width: 50%;
+                                
                                 a {
 
                                 }

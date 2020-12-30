@@ -10,7 +10,17 @@
 
                 <!-- dx: user access -->
                 <div class="user-access">
-                    ciao
+                    <div class="trigger-menu">
+                        <i class="fas fa-bars"></i>
+                    </div>
+
+                    <div class="user-log-in">
+                        Accedi
+                    </div>
+
+                    <a href="#" class="btn btn-primary">
+                        iscriviti
+                    </a>
                 </div>
             </div>
         </div>
@@ -71,6 +81,12 @@
                         <li>
                             <a href="#">
                                 bottega
+                            </a>
+                        </li>
+                        <li class="search-btn">
+                            <a href="#">
+                                <i class="fas fa-search"></i>
+                                cerca
                             </a>
                         </li>
                     </ul>

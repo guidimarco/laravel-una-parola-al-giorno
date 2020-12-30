@@ -4,6 +4,9 @@
         <meta charset="utf-8">
         <title>@yield('title', 'Una parola al giorno')</title>
 
+        <!-- favicon -->
+        <link rel="shortcut icon" href="https://unaparolaalgiorno.it/favicon.ico">
+
         <!-- css -->
         <link rel="stylesheet" href="/css/app.css">
     </head>
