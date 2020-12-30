@@ -73,7 +73,7 @@
                                 collabora
                             </a>
                         </li>
-                        <li class="btn-sec">
+                        <li class="btn-special">
                             <a href="#">
                                 premium
                             </a>

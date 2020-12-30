@@ -6648,6 +6648,18 @@ a {
   padding: 6px 12px;
 }
 
+.btn-special {
+  background-color: rgba(69, 153, 147, 0.1);
+  color: #459993;
+  border: 1px solid #459993;
+  border-radius: 3px;
+  font-weight: bold;
+}
+
+header {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.7);
+}
 header #header-logo .container .row {
   justify-content: space-between;
   flex-wrap: nowrap;
@@ -6700,20 +6712,32 @@ header #nav-menu .container .row {
 }
 header #nav-menu .container .row .main-menu {
   width: 100%;
-  background-color: green;
 }
 header #nav-menu .container .row .main-menu ul {
+  display: table;
+  clear: both;
+  content: "";
   display: none;
   width: 100%;
+  font-size: 12.6px;
+  text-transform: uppercase;
+  padding: 3px 0;
 }
 header #nav-menu .container .row .main-menu ul li {
   display: block;
   float: left;
   width: 100%;
+  border: 1px solid transparent;
+}
+header #nav-menu .container .row .main-menu ul li.btn-special {
+  border-color: #459993;
+}
+header #nav-menu .container .row .main-menu ul li:hover {
+  background-color: #f9f9f9;
 }
 header #nav-menu .container .row .main-menu ul li a {
   display: inline-block;
-  padding: 12px 16px;
+  padding: 12px 8px;
 }
 
 @media screen and (min-width: 576px) {
@@ -6734,8 +6758,7 @@ header #nav-menu .container .row .main-menu ul li a {
     display: block;
   }
   header #nav-menu .container .row .main-menu ul {
-    display: block;
-    width: unset;
+    display: table;
   }
   header #nav-menu .container .row .main-menu ul li {
     width: unset;

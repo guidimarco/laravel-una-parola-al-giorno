@@ -1,4 +1,6 @@
 header {
+    font-size: $fontSize;
+    color: rgba(0,0,0,.7);
 
     // top: logo and user access
     #header-logo {
@@ -51,6 +53,7 @@ header {
     #nav-menu {
         border-top: 1px solid #e5e5e5;
         border-bottom: 1px solid #e5e5e5;
+
         .container {
             .row {
                 justify-content: space-between;
@@ -58,22 +61,31 @@ header {
                 // top-sx: menu
                 .main-menu {
                     width: 100%;
-                    background-color: green;
 
                     ul {
+                        @include clearfix;
                         display: none;
                         width: 100%;
-                        // @include clearfix;
+                        font-size: $fontSize * 0.9;
+                        text-transform: uppercase;
+                        padding: $spacing / 4 0;
+
                         li {
                             display: block;
                             float: left;
                             width: 100%;
-                            &.search {
+                            border: 1px solid transparent;
 
+                            &.btn-special {
+                                border-color: $btnSpCol;
+                            }
+
+                            &:hover {
+                                background-color: #f9f9f9;
                             }
                             a {
                                 display: inline-block;
-                                padding: $spacing $spacing / 3 * 4;
+                                padding: $spacing $spacing / 6 * 4;
                             }
                         }
                     }
@@ -234,8 +246,7 @@ header {
                     .main-menu {
 
                         ul {
-                            display: block;
-                            width: unset;
+                            display: table;
                             li {
                                 width: unset;
                                 &.search-btn {
@@ -294,7 +305,7 @@ header {
 
                         ul {
                             li {
-                                
+
                                 a {
 
                                 }
