@@ -3,6 +3,7 @@ footer {
     #footer-menu {
         background-color: $footerPr;
         color: $footerPrCol;
+        padding: $spacing * 4 0 $spacing;
 
         .footer-menu {
             width: 100%;

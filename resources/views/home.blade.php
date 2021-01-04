@@ -5,7 +5,7 @@
 @section('main')
     <main>
         <div class="container">
-            aho
+            <h1>HOME PAGE</h1>
         </div>
     </main>
 @endsection

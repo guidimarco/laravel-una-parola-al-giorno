@@ -6826,12 +6826,13 @@ header #nav-menu .container .row .main-menu ul li a.btn-special {
 }
 main {
   padding-top: 62px;
-  background-color: red;
+  min-height: 100vh;
 }
 
 footer #footer-menu {
   background-color: #f1f1f1;
   color: #222222;
+  padding: 48px 0 12px;
 }
 footer #footer-menu .footer-menu {
   width: 100%;
