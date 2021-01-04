@@ -1,40 +1,49 @@
 footer {
-    font-size: $fontSize * 0.9;
-    padding: (2 * $spacing) 0;
-    padding-bottom: 150px; // footer-bg-img height
-    color: $textPr;
-    background-image: url("../images/sfondo-footer.jpg");
-    background-repeat: repeat-x;
-    background-position: bottom;
 
-    ul {
-        li {
-            display: block;
-            margin-bottom: $spacing / 2;
-        }
-    }
+    // top: footer-menu
+    #footer-menu {
+        background-color: $footerPr;
+        color: $footerPrCol;
 
-    #info {
-        // background-color: purple;
-    }
+        .footer-menu {
+            width: 100%;
+            @include flex(row, center, flex-start);
 
-    .footer-menu {
-        // background-color: yellow;
-
-        ul {
-            li {
-                .footer-menu-name {
-                    display: inline-block;
-                    font-size: $fontSize * 1.5;
-                    font-weight: bold;
-                    text-transform: uppercase;
-                    margin: ($spacing * 2) 0;
+            .footer-submenu {
+                // title of submenu
+                width: 25%;
+                .submenu-title {
                 }
-                li {
-                    margin-bottom: $spacing;
+
+                // ul-submenu
+                .submenu {
+                    li {
+                        display: block;
+                        cursor: pointer;
+                    }
+                }
+            } // end: footer-submenu
+        } // end: footer-menu
+    } // end: #footer-menu
+
+    // btm: footer-copy
+    #footer-copy {
+        background-color: darken($footerPr, 6.67);
+        color: lighten($footerPrCol, 13.33);
+        font-size: $fontSize * 0.9;
+        letter-spacing: 1px;
+        padding: $spacing * 2 0 $spacing;
+
+        // info container
+        .copy-info {
+            text-align: center;
+            p {
+                margin-bottom: $spacing / 2;
+                line-height: $spacing * 3 / 2;
+                a {
+                    border-bottom: 1px solid $linkPr;
                 }
             }
         }
     }
-
 }

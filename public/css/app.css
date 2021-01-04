@@ -6826,3 +6826,39 @@ main {
   padding-top: 62px;
   background-color: red;
 }
+
+footer #footer-menu {
+  background-color: #f1f1f1;
+  color: #222222;
+}
+footer #footer-menu .footer-menu {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+}
+footer #footer-menu .footer-menu .footer-submenu {
+  width: 25%;
+}
+footer #footer-menu .footer-menu .footer-submenu .submenu li {
+  display: block;
+  cursor: pointer;
+}
+footer #footer-copy {
+  background-color: #e0e0e0;
+  color: #444444;
+  font-size: 12.6px;
+  letter-spacing: 1px;
+  padding: 24px 0 12px;
+}
+footer #footer-copy .copy-info {
+  text-align: center;
+}
+footer #footer-copy .copy-info p {
+  margin-bottom: 6px;
+  line-height: 18px;
+}
+footer #footer-copy .copy-info p a {
+  border-bottom: 1px solid #17A2B8;
+}
