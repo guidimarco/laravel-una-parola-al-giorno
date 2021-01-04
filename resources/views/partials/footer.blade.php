@@ -5,7 +5,10 @@
             <div class="row">
                 <ul class="footer-menu">
                     <li class="footer-submenu">
-                        <span class="submenu-title">UPAG</span>
+                        <div class="submenu-title">
+                            UPAG
+                            <div class="underline"></div>
+                        </div>
                         <ul class="submenu">
                             <li>Il progetto</li>
                             <li>Manifesto</li>
@@ -15,7 +18,10 @@
                         </ul>
                     </li>
                     <li class="footer-submenu">
-                        <span class="submenu-title">Partecipa</span>
+                        <div class="submenu-title">
+                            Partecipa
+                            <div class="underline"></div>
+                        </div>
                         <ul class="submenu">
                             <li>Contatti/Proponi</li>
                             <li>Collabora</li>
@@ -24,7 +30,10 @@
                         </ul>
                     </li>
                     <li class="footer-submenu">
-                        <span class="submenu-title">Seguici</span>
+                        <div class="submenu-title">
+                            Seguici
+                            <div class="underline"></div>
+                        </div>
                         <ul class="submenu">
                             <li>Iscriviti</li>
                             <li>Facebook</li>
@@ -33,7 +42,10 @@
                         </ul>
                     </li>
                     <li class="footer-submenu">
-                        <span class="submenu-title">Note legali</span>
+                        <div class="submenu-title">
+                            Note legali
+                            <div class="underline"></div>
+                        </div>
                         <ul class="submenu">
                             <li>Condizioni - Termini di servizio</li>
                             <li>Cookie policy</li>

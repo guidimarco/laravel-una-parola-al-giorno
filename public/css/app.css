@@ -6666,6 +6666,7 @@ header #header-logo {
   top: 0;
   left: 0;
   right: 0;
+  z-index: 10;
 }
 header #header-logo .container .row {
   justify-content: space-between;
@@ -6719,6 +6720,7 @@ header #nav-menu {
   top: 62px;
   left: 0;
   right: 0;
+  z-index: 10;
 }
 header #nav-menu .container .row {
   justify-content: space-between;
@@ -6837,13 +6839,30 @@ footer #footer-menu .footer-menu {
   flex-direction: row;
   justify-content: center;
   align-items: flex-start;
+  flex-wrap: wrap;
 }
 footer #footer-menu .footer-menu .footer-submenu {
-  width: 25%;
+  width: 100%;
+}
+footer #footer-menu .footer-menu .footer-submenu .submenu-title {
+  font-weight: 700;
+  font-size: 19.6px;
+  letter-spacing: 1px;
+  position: relative;
+  padding: 6px;
+  margin-bottom: 6px;
+}
+footer #footer-menu .footer-menu .footer-submenu .submenu-title .underline {
+  width: 32px;
+  height: 3px;
+  background-color: #D92929;
+  position: absolute;
 }
 footer #footer-menu .footer-menu .footer-submenu .submenu li {
   display: block;
   cursor: pointer;
+  padding: 6px;
+  margin-bottom: 6px;
 }
 footer #footer-copy {
   background-color: #e0e0e0;
@@ -6861,4 +6880,10 @@ footer #footer-copy .copy-info p {
 }
 footer #footer-copy .copy-info p a {
   border-bottom: 1px solid #17A2B8;
+}
+
+@media screen and (min-width: 576px) {
+  footer #footer-menu .footer-menu .footer-submenu {
+    width: 25%;
+  }
 }

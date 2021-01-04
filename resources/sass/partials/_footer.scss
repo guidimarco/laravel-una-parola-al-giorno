@@ -1,5 +1,4 @@
 footer {
-
     // top: footer-menu
     #footer-menu {
         background-color: $footerPr;
@@ -8,11 +7,24 @@ footer {
         .footer-menu {
             width: 100%;
             @include flex(row, center, flex-start);
+            flex-wrap: wrap;
 
             .footer-submenu {
                 // title of submenu
-                width: 25%;
+                width: 100%;
                 .submenu-title {
+                    font-weight: 700;
+                    font-size: $fontSize * 1.4;
+                    letter-spacing: 1px;
+                    position: relative;
+                    padding: $spacing / 2;
+                    margin-bottom: $spacing / 2;
+
+                    .underline {
+                        width: 32px; height: 3px;
+                        background-color: $btnPr;
+                        position: absolute;
+                    }
                 }
 
                 // ul-submenu
@@ -20,6 +32,8 @@ footer {
                     li {
                         display: block;
                         cursor: pointer;
+                        padding: $spacing / 2;
+                        margin-bottom: $spacing / 2;
                     }
                 }
             } // end: footer-submenu
@@ -47,3 +61,32 @@ footer {
         }
     }
 }
+
+// MEDIA QUERY
+// - xs -
+@media screen and (min-width: $sm-min) {
+    footer {
+        // top: footer-menu
+        #footer-menu {
+            .footer-menu {
+                .footer-submenu {
+                    // title of submenu
+                    width: 25%;
+                } // end: footer-submenu
+            } // end: footer-menu
+        } // end: #footer-menu
+    }
+}
+// - sm -
+@media screen and (min-width: $md-min) {
+
+}
+// - md -
+@media screen and (min-width: $lg-min) {
+
+}
+// - lg -
+@media screen and (min-width: $xl-min) {
+
+}
+// - xl -
