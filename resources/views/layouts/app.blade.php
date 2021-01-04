@@ -8,7 +8,7 @@
         <link rel="shortcut icon" href="https://unaparolaalgiorno.it/favicon.ico">
 
         <!-- responsive -->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0 ">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <!-- css -->
         <link rel="stylesheet" href="/css/app.css">

@@ -1,4 +1,55 @@
 main {
     padding-top: $headerTopH;
     min-height: 100vh;
+
+    // home-page
+    #main-carousel {
+        height: calc(100vh - #{$headerTopH});
+        background-color: $btnPr;
+    } // end main-carousel
+
+    #brand-description {
+        padding: $spacing * 8 0;
+        font-size: $fontSize * 1.5;
+        p:first-child {
+            margin-bottom: $spacing * 2;
+        }
+    } // end brand-description
+
+    #parola-del-giorno {
+        background-color: $btnPr;
+        #parola-di-oggi {
+
+        }
+
+        .altre-parole {
+
+        }
+    } // end parola-del-giorno
+
+    #home-news {
+
+    } // end home-news
+    // end home-page
 } // end main
+
+// MEDIA QUERY
+// - xs -
+@media screen and (min-width: $sm-min) {
+
+}
+// - sm -
+@media screen and (min-width: $md-min) {
+
+}
+// - md -
+@media screen and (min-width: $lg-min) {
+    main {
+        padding-top: 0;
+    }
+}
+// - lg -
+@media screen and (min-width: $xl-min) {
+
+}
+// - xl -

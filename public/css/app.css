@@ -6828,7 +6828,25 @@ main {
   padding-top: 62px;
   min-height: 100vh;
 }
-
+main #main-carousel {
+  height: calc(100vh - 62px);
+  background-color: #D92929;
+}
+main #brand-description {
+  padding: 96px 0;
+  font-size: 21px;
+}
+main #brand-description p:first-child {
+  margin-bottom: 24px;
+}
+main #parola-del-giorno {
+  background-color: #D92929;
+}
+@media screen and (min-width: 992px) {
+  main {
+    padding-top: 0;
+  }
+}
 footer #footer-menu {
   background-color: #f1f1f1;
   color: #222222;
