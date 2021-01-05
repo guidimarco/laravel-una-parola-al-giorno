@@ -3,11 +3,82 @@ main {
     min-height: 100vh;
 
     // home-page
-    #main-carousel {
+    #promo-carousel {
         height: calc(100vh - #{$headerTopH});
         position: relative;
-        background: $btnPr url("https://unaparolaalgiorno.it/_nuxt/img/memphis-mini.33545ec.png") repeat scroll center;
-        background-blend-mode: multiply;
+        .promo-container {
+            @include posAbs(0, 0, 0, 0);
+            // promo-card
+            .promo-card {
+                display: none;
+                &.active {
+                    @include posAbs(0, 0, 0, 0);
+                    display: flex;
+                    @include flex(column, center, center);
+                    background-blend-mode: multiply;
+                }
+                // section dante
+                &.promo-dante {
+                    .btn-promo {
+                        background-color: #FFEFA3;
+                        color: rgba(0, 0, 0, 0.7);
+                        &:hover {
+                            box-shadow: 1px 2px 15px #FFEFA3;
+                        }
+                    }
+                }
+                // section una parola al giorno
+                &.promo-log-in {
+                    .btn-container {
+                        @include flex(row, center, center);
+                        margin-top: $spacing * 2;
+                        .btn {
+                            margin: 0 $spacing;
+                            color: white;
+                            font-size: $fontSize;
+                            &.btn-google {
+                                background-color: #d9534f;
+                                border: 1px solid #b52b27;
+                                &:hover {
+                                    background-color: #b52b27;
+                                }
+                            }
+                            &.btn-facebook {
+                                background-color: #337ab7;
+                                border: 1px solid #22527b;
+                                &:hover {
+                                    background-color: #2a6597;
+                                }
+                            }
+                        }
+                    }
+                }
+
+            }
+
+            // dots DIV
+            .dots {
+                @include posAbs(unset, unset, 50%, 20px); z-index: 10;
+                transform: translateX(-50%);
+                .dot {
+                    margin: 0 $spacing / 2;
+                }
+            }
+
+            // arrow left and right
+            & [class^="arrow"] { // both left and right
+                @include posAbs(50%, unset, 20px, unset); z-index: 10;
+                transform: translateY(-50%);
+                color: rgba(255, 255, 255, 0.5);
+                cursor: pointer;
+                &:hover {
+                    color: rgba(255, 255, 255, 1);
+                }
+            }
+            .arrow-right {
+                @include posAbs(50%, 20px, unset, unset);
+            }
+        }
     } // end main-carousel
 
     #brand-description {
@@ -41,7 +112,6 @@ main {
         .altre-parole {
             color: #444444;
             margin-top: $spacing * 2;
-            margin-bottom: $spacing * 4;
 
             a {
                 padding: 1rem;

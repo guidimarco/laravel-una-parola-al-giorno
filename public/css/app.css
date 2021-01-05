@@ -6654,6 +6654,27 @@ a {
   font-weight: bold;
 }
 
+.btn-promo {
+  font-size: 28px;
+  border-radius: 3px;
+  padding: 12px 24px;
+  min-width: 150px;
+  margin-top: 24px;
+  cursor: pointer;
+}
+
+.dots .dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+}
+.dots .dot.active {
+  background-color: white;
+}
+
 header {
   font-size: 14px;
   color: rgba(0, 0, 0, 0.7);
@@ -6826,11 +6847,98 @@ main {
   padding-top: 62px;
   min-height: 100vh;
 }
-main #main-carousel {
+main #promo-carousel {
   height: calc(100vh - 62px);
   position: relative;
-  background: #D92929 url("https://unaparolaalgiorno.it/_nuxt/img/memphis-mini.33545ec.png") repeat scroll center;
+}
+main #promo-carousel .promo-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+main #promo-carousel .promo-container .promo-card {
+  display: none;
+}
+main #promo-carousel .promo-container .promo-card.active {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-blend-mode: multiply;
+}
+main #promo-carousel .promo-container .promo-card.promo-dante .btn-promo {
+  background-color: #FFEFA3;
+  color: rgba(0, 0, 0, 0.7);
+}
+main #promo-carousel .promo-container .promo-card.promo-dante .btn-promo:hover {
+  box-shadow: 1px 2px 15px #FFEFA3;
+}
+main #promo-carousel .promo-container .promo-card.promo-log-in .btn-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 24px;
+}
+main #promo-carousel .promo-container .promo-card.promo-log-in .btn-container .btn {
+  margin: 0 12px;
+  color: white;
+  font-size: 14px;
+}
+main #promo-carousel .promo-container .promo-card.promo-log-in .btn-container .btn.btn-google {
+  background-color: #d9534f;
+  border: 1px solid #b52b27;
+}
+main #promo-carousel .promo-container .promo-card.promo-log-in .btn-container .btn.btn-google:hover {
+  background-color: #b52b27;
+}
+main #promo-carousel .promo-container .promo-card.promo-log-in .btn-container .btn.btn-facebook {
+  background-color: #337ab7;
+  border: 1px solid #22527b;
+}
+main #promo-carousel .promo-container .promo-card.promo-log-in .btn-container .btn.btn-facebook:hover {
+  background-color: #2a6597;
+}
+main #promo-carousel .promo-container .dots {
+  position: absolute;
+  top: unset;
+  right: unset;
+  left: 50%;
+  bottom: 20px;
+  z-index: 10;
+  transform: translateX(-50%);
+}
+main #promo-carousel .promo-container .dots .dot {
+  margin: 0 6px;
+}
+main #promo-carousel .promo-container [class^=arrow] {
+  position: absolute;
+  top: 50%;
+  right: unset;
+  left: 20px;
+  bottom: unset;
+  z-index: 10;
+  transform: translateY(-50%);
+  color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+}
+main #promo-carousel .promo-container [class^=arrow]:hover {
+  color: white;
+}
+main #promo-carousel .promo-container .arrow-right {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  left: unset;
+  bottom: unset;
 }
 main #brand-description {
   padding: 96px 0;
@@ -6859,7 +6967,6 @@ main #parola-del-giorno .btn-container .btn:hover {
 main #parole-vecchie .altre-parole {
   color: #444444;
   margin-top: 24px;
-  margin-bottom: 48px;
 }
 main #parole-vecchie .altre-parole a {
   padding: 1rem;

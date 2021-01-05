@@ -5,11 +5,101 @@
 @section('main')
     <main>
         <!-- carousel: main offer -->
-        <section id="main-carousel">
-            <div class="container">
-                <div class="row">
+        <section id="promo-carousel">
+            <!-- promo container, with card + dots + narrow -->
+            <div class="promo-container">
 
+                <!-- left arrow -->
+                <div class="arrow-left">
+                    <i class="fas fa-angle-left fa-3x"></i>
                 </div>
+
+                <!-- right arrow -->
+                <div class="arrow-right">
+                    <i class="fas fa-angle-right fa-3x"></i>
+                </div>
+
+                <!-- btm: dots -->
+                <div class="dots">
+                    <div class="dot active"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+
+                <!-- single promo: dante - background + img + btn -->
+                <div class="promo-card promo-dante"
+                    style="background-color: #D92929; background-image: url('https://unaparolaalgiorno.it/_nuxt/img/memphis-mini.33545ec.png')">
+
+                    <!-- book cover -->
+                    <img src="https://v3.unaparolaalgiorno.it/uploads/prodotti/h-dan.png" alt="libro dante libera tutti"
+                        style="width: 50%; max-width: 250px; max-height: 50%;">
+
+                    <!-- book description img -->
+                    <img src="https://unaparolaalgiorno.it/_nuxt/img/dante-sub.0b917dc.svg" alt="scritta promozionale libro"
+                        style="max-width: 200px; max-height: 20%;">
+
+                    <div class="btn btn-promo shine">
+                        Scoprilo subito
+                    </div>
+                </div><!-- end promo: dante -->
+
+                <!-- single promo: log-in - background + img + btn -->
+                <div class="promo-card promo-log-in active"
+                    style="background-color: rgb(33, 49, 76); background-image: url('https://unaparolaalgiorno.it/_nuxt/img/subtle_white_feathers.9f3d284.jpg')">
+
+                    <!-- title -->
+                    <img src="https://unaparolaalgiorno.it/_nuxt/img/main-title.40a5f51.svg" alt="avventura magnifica italiano"
+                        style="max-width: 50%; max-height: 50%;">
+
+                    <!-- title -->
+                    <img src="https://unaparolaalgiorno.it/_nuxt/img/main-sub.8ae538c.svg" alt="titolo pagina web"
+                        style="max-width: 50%; max-height: 50%;">
+
+                    <div class="btn-container">
+                        <div class="btn btn-promo btn-google">
+                            Accedi con <strong>Google</strong>
+                        </div>
+
+                        <div class="btn btn-promo btn-facebook">
+                            Accedi con <strong>Facebook</strong>
+                        </div>
+                    </div>
+                </div><!-- end promo: log-in -->
+
+                <!-- single promo: la bottega - background + img + btn -->
+                <div class="promo-card promo-bottega"
+                    style="background-color: #2eafc3; background-image: url('https://unaparolaalgiorno.it/_nuxt/img/grey.74f7cdf.png')">
+
+                    {{-- <!-- book cover -->
+                    <img src="https://v3.unaparolaalgiorno.it/uploads/prodotti/h-dan.png" alt="libro dante libera tutti"
+                        style="width: 50%; max-width: 250px; max-height: 50%;">
+
+                    <!-- book description img -->
+                    <img src="https://unaparolaalgiorno.it/_nuxt/img/dante-sub.0b917dc.svg" alt="scritta promozionale libro"
+                        style="max-width: 200px; max-height: 20%;">
+
+                    <div class="btn btn-promo shine">
+                        Scoprilo subito
+                    </div> --}}
+                </div><!-- end promo: la bottega -->
+
+                <!-- single promo: parole difficili - background + img + btn -->
+                <div class="promo-card promo-par-difficili"
+                    style="background-color: #00897b; background-image: url('https://unaparolaalgiorno.it/_nuxt/img/subtle_white_feathers.9f3d284.jpg')">
+
+                    {{-- <!-- book cover -->
+                    <img src="https://v3.unaparolaalgiorno.it/uploads/prodotti/h-dan.png" alt="libro dante libera tutti"
+                        style="width: 50%; max-width: 250px; max-height: 50%;">
+
+                    <!-- book description img -->
+                    <img src="https://unaparolaalgiorno.it/_nuxt/img/dante-sub.0b917dc.svg" alt="scritta promozionale libro"
+                        style="max-width: 200px; max-height: 20%;">
+
+                    <div class="btn btn-promo shine">
+                        Scoprilo subito
+                    </div> --}}
+                </div><!-- end promo: parole difficili -->
             </div>
         </section>
 
