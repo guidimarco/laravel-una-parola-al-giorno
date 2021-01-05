@@ -5,7 +5,9 @@ main {
     // home-page
     #main-carousel {
         height: calc(100vh - #{$headerTopH});
-        background-color: $btnPr;
+        position: relative;
+        background: $btnPr url("https://unaparolaalgiorno.it/_nuxt/img/memphis-mini.33545ec.png") repeat scroll center;
+        background-blend-mode: multiply;
     } // end main-carousel
 
     #brand-description {
@@ -17,18 +19,65 @@ main {
     } // end brand-description
 
     #parola-del-giorno {
-        background-color: $btnPr;
-        #parola-di-oggi {
+        background-color: lighten($btnPr, 5%);
+        padding: $spacing * 2 0;
+        color: white;
 
-        }
-
-        .altre-parole {
-
+        .btn-container {
+            display: flex;
+            justify-content: center;
+            .btn {
+                margin-top: $spacing;
+                background-color: lighten($btnPr, 10%);
+                transition: all 0.5s ease 0s;
+            }
+            .btn:hover {
+                background-color: lighten($btnPr, 20%);
+            }
         }
     } // end parola-del-giorno
 
-    #home-news {
+    #parole-vecchie {
+        .altre-parole {
+            color: #444444;
+            margin-top: $spacing * 2;
+            margin-bottom: $spacing * 4;
 
+            a {
+                padding: 1rem;
+                background-color: #f5f5f5;
+                display: block;
+                line-height: 1.4rem;
+                position: relative;
+                border: 1px solid #eee;
+                font-weight: 700;
+                margin: 0 $spacing / 2;
+            }
+            h3 {
+                margin: 0;
+            }
+        }
+    } // end parole-vecchie
+
+    #home-news {
+        padding: $spacing * 4 0;
+        .title {
+            color: #424242;
+            img {
+                max-height: 28px;
+            }
+        }
+        .news-card {
+            color: #444444;
+            margin: $spacing * 2 0;
+            border: 1px solid black;
+        }
+        .see-all-news-link {
+            text-align: center;
+            color: #17a2b8;
+            font-weight: bold;
+            font-size: $fontSize * 1.5;
+        }
     } // end home-news
     // end home-page
 } // end main
@@ -45,7 +94,10 @@ main {
 // - md -
 @media screen and (min-width: $lg-min) {
     main {
-        padding-top: 0;
+        padding: 0;
+        #main-carousel {
+            height: calc(100vh - #{$headerDesktopTopH});
+        } // end main-carousel
     }
 }
 // - lg -

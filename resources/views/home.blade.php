@@ -31,28 +31,30 @@
                     <div class="col-xs-12">
                         <h3>Nolente</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        <button type="button" name="button">Leggi Nolente</button>
+                    </div>
+                    <div class="col-xs-12 btn-container">
+                        <a href="#" class="btn">Leggi Nolente</a>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- parola vecchie -->
-        <section>
+        <section id="parole-vecchie">
             <div class="container">
                 <div class="row">
                     <!-- parole vecchie -->
                     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 altre-parole">
-                        <h3>Valzer</h3>
+                        <a href="#"><h3>Valzer</h3></a>
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 altre-parole">
-                        <h3>Circa</h3>
+                        <a href="#"><h3>Circa</h3></a>
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 altre-parole">
-                        <h3>Abate</h3>
+                        <a href="#"><h3>Abate</h3></a>
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 altre-parole tutte-le-parole">
-                        <h3>Tutte le parole</h3>
+                        <a href="#"><h3>Tutte le parole</h3></a>
                     </div>
                 </div>
             </div>
@@ -70,21 +72,27 @@
 
                     <!-- all-news -->
                     <div class="col-xs-12 col-md-4">
-                        <h3>titolo</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <div class="news-card">
+                            <h3>titolo</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        </div>
                     </div>
                     <div class="col-xs-12 col-md-4">
-                        <h3>titolo</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <div class="news-card">
+                            <h3>titolo</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        </div>
                     </div>
                     <div class="col-xs-12 col-md-4">
-                        <h3>titolo</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <div class="news-card">
+                            <h3>titolo</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        </div>
                     </div>
 
                     <!-- link to all articles -->
-                    <div class="col-xs-12">
-                        Vedi tutti gli articoli >>
+                    <div class="col-xs-12 see-all-news-link">
+                        <a href="#">Vedi tutti gli articoli >></a>
                     </div>
                 </div>
             </div>

@@ -6611,14 +6611,12 @@ body {
   margin: 0 auto;
 }
 
-h1, h2 {
-  color: #001942;
+h2 {
+  display: inline-block;
 }
 
-h2 {
-  width: 100%;
-  text-transform: uppercase;
-  margin: 24px 0 12px 10px;
+h3 {
+  margin: 24px 0;
 }
 
 img {
@@ -6830,7 +6828,9 @@ main {
 }
 main #main-carousel {
   height: calc(100vh - 62px);
-  background-color: #D92929;
+  position: relative;
+  background: #D92929 url("https://unaparolaalgiorno.it/_nuxt/img/memphis-mini.33545ec.png") repeat scroll center;
+  background-blend-mode: multiply;
 }
 main #brand-description {
   padding: 96px 0;
@@ -6840,11 +6840,67 @@ main #brand-description p:first-child {
   margin-bottom: 24px;
 }
 main #parola-del-giorno {
-  background-color: #D92929;
+  background-color: #dd3f3f;
+  padding: 24px 0;
+  color: white;
 }
+main #parola-del-giorno .btn-container {
+  display: flex;
+  justify-content: center;
+}
+main #parola-del-giorno .btn-container .btn {
+  margin-top: 12px;
+  background-color: #e15454;
+  transition: all 0.5s ease 0s;
+}
+main #parola-del-giorno .btn-container .btn:hover {
+  background-color: #e88080;
+}
+main #parole-vecchie .altre-parole {
+  color: #444444;
+  margin-top: 24px;
+  margin-bottom: 48px;
+}
+main #parole-vecchie .altre-parole a {
+  padding: 1rem;
+  background-color: #f5f5f5;
+  display: block;
+  line-height: 1.4rem;
+  position: relative;
+  border: 1px solid #eee;
+  font-weight: 700;
+  margin: 0 6px;
+}
+main #parole-vecchie .altre-parole h3 {
+  margin: 0;
+}
+main #home-news {
+  padding: 48px 0;
+}
+main #home-news .title {
+  color: #424242;
+}
+main #home-news .title img {
+  max-height: 28px;
+}
+main #home-news .news-card {
+  color: #444444;
+  margin: 24px 0;
+  border: 1px solid black;
+}
+main #home-news .see-all-news-link {
+  text-align: center;
+  color: #17a2b8;
+  font-weight: bold;
+  font-size: 21px;
+}
+
 @media screen and (min-width: 992px) {
   main {
-    padding-top: 0;
+    padding: 0;
+  }
+  main #main-carousel {
+    height: calc(100vh - 116px);
   }
 }
 footer #footer-menu {

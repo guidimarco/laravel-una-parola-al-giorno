@@ -15,14 +15,11 @@ body {
     margin: 0 auto;
 }
 
-h1, h2 {
-    color: $titlePr;
-}
-
 h2 {
-    width: 100%;
-    text-transform: uppercase;
-    margin: (2 * $spacing) 0 $spacing (2 * $gutter);
+    display: inline-block;
+}
+h3 {
+    margin: (2 * $spacing) 0;
 }
 
 img {
