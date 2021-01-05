@@ -53,7 +53,29 @@ main {
                         }
                     }
                 }
-
+                // section la bottega dei libri
+                &.promo-bottega {
+                    img:nth-child(2) {
+                        margin-bottom: $spacing * 2;
+                    }
+                    .btn-promo {
+                        background-color: #44E2C9;
+                        color: #222222;
+                        &:hover {
+                            box-shadow: 1px 2px 15px #44E2C9;
+                        }
+                    }
+                }
+                // section delle parole difficili
+                &.promo-par-difficili {
+                    .btn-promo {
+                        background-color: #EEFE56;
+                        color: #222222;
+                        &:hover {
+                            box-shadow: 1px 2px 15px #EEFE56;
+                        }
+                    }
+                }
             }
 
             // dots DIV
@@ -94,6 +116,19 @@ main {
         padding: $spacing * 2 0;
         color: white;
 
+        padding: .3rem 0;
+        line-height: 2rem;
+        margin: 0 0 .5rem;
+        font-weight: 300;
+
+        h3 {
+            font-family: Merriweather, Georgia, serif;
+            font-weight: 600;
+            font-size: 1.6rem;
+            line-height: 2.6rem;
+            padding: .5rem 0 0;
+        }
+
         .btn-container {
             display: flex;
             justify-content: center;
@@ -101,6 +136,16 @@ main {
                 margin-top: $spacing;
                 background-color: lighten($btnPr, 10%);
                 transition: all 0.5s ease 0s;
+                padding: 1rem;
+                font-size: 1.2rem;
+                background-color: hsla(0,0%,100%,.12);
+                color: hsla(0,0%,100%,.9);
+                margin: 1rem auto;
+                display: inline-block;
+                font-weight: 700;
+                text-transform: uppercase;
+                transition: .4s;
+                border-radius: 4px;
             }
             .btn:hover {
                 background-color: lighten($btnPr, 20%);
@@ -137,10 +182,18 @@ main {
                 max-height: 28px;
             }
         }
-        .news-card {
-            color: #444444;
-            margin: $spacing * 2 0;
-            border: 1px solid black;
+        .news-container {
+            @include flex(row, center, flex-start);
+            .news-card {
+                padding: 0 $gutter / 2;
+                width: 100%;
+                color: #444444;
+                margin: $spacing * 2 0;
+                img {
+                    height: 250px;
+                    object-fit: cover;
+                }
+            }
         }
         .see-all-news-link {
             text-align: center;
@@ -159,7 +212,15 @@ main {
 }
 // - sm -
 @media screen and (min-width: $md-min) {
-
+    main {
+        #home-news {
+            .news-container {
+                .news-card {
+                    width: calc(100% / 3);
+                }
+            }
+        }
+    }
 }
 // - md -
 @media screen and (min-width: $lg-min) {

@@ -14,8 +14,31 @@ var app = new Vue({
     },
 });
 
-// JQUERY
+// JQUERY + HANDLEBARS
 const $ = require("jquery");
+
+const Handlebars = require("handlebars");
+const template = Handlebars.compile("Name: {{name}}");
+// hadlebars template --> news
+var newsSource = document.getElementById("news-template").innerHTML;
+var newsTemplate = Handlebars.compile(newsSource);
+var news = [
+    {
+        title: 'L\'osco, questo strano sconosciuto',
+        article: 'Storia e collocazione di una lingua e di un popolo italico meno famoso, che si intreccia profondamente con la storia romana, e che ha lasciato un\'eredità riconoscibile nella lingua parlata ancora oggi in Italia.',
+        img: 'https://v3.unaparolaalgiorno.it/uploads/a/Osco.jpg',
+    },
+    {
+        title: 'Il meglio del mese — Novembre 2020',
+        article: 'Da Carlo Magno allo stigmatizzare, dall\'evviva al cleuasmo, dal parruccone al corroborare fino all\'autopoiesi, il colmo di questo autunno è stato generoso di parole ricche.',
+        img: 'https://v3.unaparolaalgiorno.it/uploads/a/2020/Il%20meglio%20del%20mese%20-%20novembre.png',
+    },
+    {
+        title: 'Il nome va sempre prima del cognome?',
+        article: 'La scelta di questo ordine ha effetti precisi, regole generali, eccezioni di cortesia e di mondo — che spesso anche le persone più dotte si ritrovano a violare.',
+        img: 'https://v3.unaparolaalgiorno.it/uploads/a/2020/nomi-cognomi-pexels-fauxels-3184465.jpg',
+    },
+];
 
 $("document").ready(function () {
     // click on arrow-left
@@ -31,6 +54,26 @@ $("document").ready(function () {
     // click on dots
     $(".dot").click(function () {
         switchToPromo($(this));
+    });
+
+    // next-img every 3s
+    var auto;
+    auto = setInterval(nextPromo, 3000);
+
+    // when i'm on carousel-btn (mouseenter) -> stop auto change
+    $("#promo-carousel .promo-container").mouseenter(function() {
+        clearInterval(auto);
+    });
+
+    // when i leave carousel-btn (mouseleave) -> restart
+    $("#promo-carousel .promo-container").mouseleave(function() {
+        auto = setInterval(nextPromo, 3000);
+    });
+
+    // stamp news to the DOM
+    news.forEach((singleNews) => {
+        var htmlNews = newsTemplate(singleNews);
+        $("#home-news .news-container").append(htmlNews);
     });
 
 });
@@ -79,8 +122,6 @@ function switchToPromo(thisDot) {
     // get the index of clicked dot
     var clickedNumber = $(".dot").index(thisDot) + 1;
     var clickedIndex = clickedNumber - 1;
-    console.log(clickedIndex);
-    console.log(clickedNumber);
 
     // select current promo card and current dot
     var currentPromo = $(".promo-card.active");

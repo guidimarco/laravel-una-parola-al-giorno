@@ -22,6 +22,8 @@
             @include('partials.footer')
         </div>
 
+        @yield('handlebars', '')
+
         <!-- js -->
         <script src="/js/app.js" charset="utf-8"></script>
     </body>

@@ -28,7 +28,7 @@
                 </div>
 
                 <!-- single promo: dante - background + img + btn -->
-                <div class="promo-card promo-dante"
+                <div class="promo-card promo-dante active"
                     style="background-color: #D92929; background-image: url('https://unaparolaalgiorno.it/_nuxt/img/memphis-mini.33545ec.png')">
 
                     <!-- book cover -->
@@ -39,16 +39,16 @@
                     <img src="https://unaparolaalgiorno.it/_nuxt/img/dante-sub.0b917dc.svg" alt="scritta promozionale libro"
                         style="max-width: 200px; max-height: 20%;">
 
-                    <div class="btn btn-promo shine">
+                    <div class="btn btn-promo">
                         Scoprilo subito
                     </div>
                 </div><!-- end promo: dante -->
 
                 <!-- single promo: log-in - background + img + btn -->
-                <div class="promo-card promo-log-in active"
+                <div class="promo-card promo-log-in"
                     style="background-color: rgb(33, 49, 76); background-image: url('https://unaparolaalgiorno.it/_nuxt/img/subtle_white_feathers.9f3d284.jpg')">
 
-                    <!-- title -->
+                    <!-- descrizione sito -->
                     <img src="https://unaparolaalgiorno.it/_nuxt/img/main-title.40a5f51.svg" alt="avventura magnifica italiano"
                         style="max-width: 50%; max-height: 50%;">
 
@@ -71,34 +71,38 @@
                 <div class="promo-card promo-bottega"
                     style="background-color: #2eafc3; background-image: url('https://unaparolaalgiorno.it/_nuxt/img/grey.74f7cdf.png')">
 
-                    {{-- <!-- book cover -->
-                    <img src="https://v3.unaparolaalgiorno.it/uploads/prodotti/h-dan.png" alt="libro dante libera tutti"
-                        style="width: 50%; max-width: 250px; max-height: 50%;">
+                    <!-- descrizione -->
+                    <img src="https://unaparolaalgiorno.it/_nuxt/img/bottega-sub.71323f2.svg" alt="bottega descrizione"
+                        style="width: 50%; max-width: 300px; max-height: 50%;">
 
-                    <!-- book description img -->
-                    <img src="https://unaparolaalgiorno.it/_nuxt/img/dante-sub.0b917dc.svg" alt="scritta promozionale libro"
+                    <!-- la bottega -->
+                    <img src="https://unaparolaalgiorno.it/_nuxt/img/bottega-title.306c2d4.svg" alt="bottega descrizione"
+                        style="width: 50%; max-width: 400px; max-height: 50%;">
+
+                    <!-- copertina libro della bottega -->
+                    <img src="https://v3.unaparolaalgiorno.it/uploads/prodotti/h-ppp.png" alt="libri della bottega"
                         style="max-width: 200px; max-height: 20%;">
 
-                    <div class="btn btn-promo shine">
-                        Scoprilo subito
-                    </div> --}}
+                    <div class="btn btn-promo">
+                        Vai alla bottega!
+                    </div>
                 </div><!-- end promo: la bottega -->
 
                 <!-- single promo: parole difficili - background + img + btn -->
                 <div class="promo-card promo-par-difficili"
                     style="background-color: #00897b; background-image: url('https://unaparolaalgiorno.it/_nuxt/img/subtle_white_feathers.9f3d284.jpg')">
 
-                    {{-- <!-- book cover -->
-                    <img src="https://v3.unaparolaalgiorno.it/uploads/prodotti/h-dan.png" alt="libro dante libera tutti"
-                        style="width: 50%; max-width: 250px; max-height: 50%;">
+                    <!-- descrizione -->
+                    <img src="https://unaparolaalgiorno.it/_nuxt/img/quiz-sub.bfc7b0e.svg" alt="descizione del quiz"
+                        style="width: 50%; max-width: 300px; max-height: 50%;">
 
-                    <!-- book description img -->
-                    <img src="https://unaparolaalgiorno.it/_nuxt/img/dante-sub.0b917dc.svg" alt="scritta promozionale libro"
-                        style="max-width: 200px; max-height: 20%;">
+                    <!-- titolo quiz -->
+                    <img src="https://unaparolaalgiorno.it/_nuxt/img/quiz-title.ca6ae71.svg" alt="titolo del quiz"
+                        style="max-height: 40%;">
 
-                    <div class="btn btn-promo shine">
-                        Scoprilo subito
-                    </div> --}}
+                    <div class="btn btn-promo">
+                        Inizia il quiz!
+                    </div>
                 </div><!-- end promo: parole difficili -->
             </div>
         </section>
@@ -161,23 +165,8 @@
                     </div>
 
                     <!-- all-news -->
-                    <div class="col-xs-12 col-md-4">
-                        <div class="news-card">
-                            <h3>titolo</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-md-4">
-                        <div class="news-card">
-                            <h3>titolo</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-md-4">
-                        <div class="news-card">
-                            <h3>titolo</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        </div>
+                    <div class="news-container col-xs-12">
+
                     </div>
 
                     <!-- link to all articles -->
@@ -188,4 +177,15 @@
             </div>
         </section>
     </main>
+@endsection
+
+@section('handlebars')
+    <!-- handlebars template -->
+    <script id="news-template" type="text/x-handlebars-template">
+        <div class="news-card">
+            <img src="@{{img}}" alt="@{{title}}">
+            <h3>@{{title}}</h3>
+            <p>@{{article}}</p>
+        </div>
+    </script>
 @endsection
