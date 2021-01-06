@@ -5,7 +5,9 @@
             <div class="row">
                 <!-- sx: brand logo -->
                 <div class="logo">
-                    <img src="https://unaparolaalgiorno.it/_nuxt/img/Logo.0d34260.png" alt="brand logo">
+                    <a href="{{ route('home-page') }}">
+                        <img src="https://unaparolaalgiorno.it/_nuxt/img/Logo.0d34260.png" alt="brand logo">
+                    </a>
                 </div>
 
                 <!-- dx: user access -->
@@ -35,7 +37,7 @@
                 <div class="main-menu">
                     <ul :class="showMenu ? 'visible' : ''">
                         <li>
-                            <a href="#">
+                            <a href="{{ route('progetto') }}">
                                 progetto
                             </a>
                         </li>

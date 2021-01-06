@@ -10,7 +10,9 @@
                             <div class="underline"></div>
                         </div>
                         <ul class="submenu">
-                            <li>Il progetto</li>
+                            <li>
+                                <a href="{{ route('progetto') }}">Il progetto</a>
+                            </li>
                             <li>Manifesto</li>
                             <li>Chi siamo</li>
                             <li>FAQ - Domande e risposte</li>
