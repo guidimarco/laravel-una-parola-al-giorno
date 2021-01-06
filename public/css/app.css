@@ -6965,7 +6965,6 @@ main #brand-description p:first-child {
   margin-bottom: 24px;
 }
 main #parola-del-giorno {
-  background-color: #dd3f3f;
   padding: 24px 0;
   color: white;
   padding: 0.3rem 0;
@@ -6973,18 +6972,23 @@ main #parola-del-giorno {
   margin: 0 0 0.5rem;
   font-weight: 300;
 }
-main #parola-del-giorno h3 {
+main #parola-del-giorno .parola-di-oggi {
+  background-color: #dd3f3f;
+  padding: 24px;
+}
+main #parola-del-giorno .parola-di-oggi h3 {
   font-family: Merriweather, Georgia, serif;
   font-weight: 600;
   font-size: 1.6rem;
   line-height: 2.6rem;
   padding: 0.5rem 0 0;
+  margin: 0;
 }
-main #parola-del-giorno .btn-container {
+main #parola-del-giorno .parola-di-oggi .btn-container {
   display: flex;
   justify-content: center;
 }
-main #parola-del-giorno .btn-container .btn {
+main #parola-del-giorno .parola-di-oggi .btn-container .btn {
   margin-top: 12px;
   background-color: #e15454;
   transition: all 0.5s ease 0s;
@@ -6999,7 +7003,7 @@ main #parola-del-giorno .btn-container .btn {
   transition: 0.4s;
   border-radius: 4px;
 }
-main #parola-del-giorno .btn-container .btn:hover {
+main #parola-del-giorno .parola-di-oggi .btn-container .btn:hover {
   background-color: #e88080;
 }
 main #parole-vecchie .altre-parole {
@@ -7033,6 +7037,7 @@ main #home-news .news-container {
   flex-direction: row;
   justify-content: center;
   align-items: flex-start;
+  flex-wrap: wrap;
 }
 main #home-news .news-container .news-card {
   padding: 0 2.5px;
@@ -7041,6 +7046,7 @@ main #home-news .news-container .news-card {
   margin: 24px 0;
 }
 main #home-news .news-container .news-card img {
+  width: 100%;
   height: 250px;
   -o-object-fit: cover;
      object-fit: cover;
